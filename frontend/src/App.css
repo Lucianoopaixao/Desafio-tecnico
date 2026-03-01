@@ -1,0 +1,100 @@
+/* container principal */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #1f2937;
+}
+
+h1 {
+  text-align: center;
+  color: #4f46e5;
+}
+
+/* form */
+.form-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+input,
+textarea,
+select {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+/* buttons */
+.btn-ai {
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.btn-ai:hover {
+  background: #7c3aed;
+}
+.btn-ai:disabled {
+  background: #c4b5fd;
+  cursor: not-allowed;
+}
+
+.btn-submit {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* recursos */
+.resource-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.resource-card {
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  border-radius: 8px;
+  background: white;
+  transition: transform 0.1s;
+}
+
+.resource-card:hover {
+  transform: translateY(-2px);
+}
+
+.badge {
+  font-size: 11px;
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+}

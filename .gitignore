@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+.python-version
+
+# Node/React
+node_modules/
+dist/
+.DS_Store
+
+# Banco de Dados
+*.db
+*.sqlite3
