@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
-import { Sparkles, Plus, Trash2, Globe, Edit3 } from "lucide-react";
+import { Sparkles, Trash2, Edit3 } from "lucide-react";
 import "./App.css";
 
 const API_URL = "http://127.0.0.1:8000"; //url do uvicorn
@@ -46,7 +46,7 @@ function App() {
         descricao: res.data.descricao,
         tags: res.data.tags.join(", "),
       });
-    } catch (error) {
+    } catch {
       alert("Erro ao consultar a AI.");
     } finally {
       setLoadingIA(false);
@@ -59,7 +59,7 @@ function App() {
       try {
         await axios.delete(`${API_URL}/recursos/${id}`);
         fetchRecursos(); // Atualiza a lista após deletar [cite: 10]
-      } catch (error) {
+      } catch {
         alert("Erro ao excluir recurso.");
       }
     }
@@ -106,7 +106,7 @@ function App() {
 
       cancelEdit();
       fetchRecursos();
-    } catch (error) {
+    } catch {
       alert("Erro ao salvar recurso.");
     }
   };
